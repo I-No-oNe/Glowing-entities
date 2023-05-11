@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "autototem",
+  "version": "1.19.4",
+
+  "name": "Auto Totem",
+  "description": "Replaces your totem when using one. (Offhand Only)",
+  "authors": [
+    "Qetrox"
+  ],
+  "contact": {
+    "sources": "https://github.com/Qetrox/AutoTotem",
+    "homepage": "https://qlient.net/",
+    "email": "mailto://info@qlient.net",
+    "issues": "https://github.com/Qetrox/AutoTotem"
+  },
+
+  "license": "All Rights Reserved",
+  "icon": "assets/autototem/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.qlient.autototem.client.autototem"
+    ]
+  },
+  "mixins": [
+    "autototem.mixins.json"
+  ],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/Z8HtMdy9pR"
+      },
+      "update_checker": false
+    }
+  },
+
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*",
+    "fabric": "*"
+  }
+}
