@@ -1,4 +1,4 @@
-package net.qlient.autototem.client;
+package net.i_no_am.glowing_entities.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
