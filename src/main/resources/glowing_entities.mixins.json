@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "glowing_entities"
+    "glowing_entities_mixin"
   ],
   "injectors": {
     "defaultRequire": 1
