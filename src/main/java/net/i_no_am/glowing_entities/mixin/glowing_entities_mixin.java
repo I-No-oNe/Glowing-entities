@@ -1,13 +1,14 @@
 package net.i_no_am.glowing_entities.mixin;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(glowing_entities_mixin.class)
+@Mixin(EntityRenderer.class)
 public abstract class glowing_entities_mixin {
 
     @Inject(method = "getBlockLight", at = @At("RETURN"), cancellable = true)
