@@ -1,12 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.qlient.autototem.mixin",
+  "package": "net.i_no_am.glowing_entities.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "client": [
-    "TotemMixin"
+    "glowing_entities"
   ],
   "injectors": {
     "defaultRequire": 1
