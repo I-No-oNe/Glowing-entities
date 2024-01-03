@@ -15,7 +15,7 @@ public abstract class ModEntityDataSaverMixin implements IEntityDataSaver {
     private NbtCompound persistentData;
 
     @Override
-    public NbtCompound getPersistentData() {
+    public NbtCompound glowing_entities$getPersistentData() {
         if (this.persistentData == null) {
             this.persistentData = new NbtCompound();
         }

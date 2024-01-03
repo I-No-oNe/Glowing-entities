@@ -21,8 +21,8 @@ public abstract class EntityRendererMixin {
 		if (entity.getWorld().isClient() && MinecraftClient.getInstance().player != null) {
             PlayerEntity player = entity.getWorld().getPlayerByUuid(MinecraftClient.getInstance().player.getUuid());
 			IEntityDataSaver playerData = (IEntityDataSaver) player;
-			if(playerData != null && playerData.getPersistentData().contains("glow"))
-				glow = playerData.getPersistentData().getInt("glow");
+			if(playerData != null && playerData.glowing_entities$getPersistentData().contains("glow"))
+				glow = playerData.glowing_entities$getPersistentData().getInt("glow");
         }
 		if (glow > 15)
 			glow = 15;
