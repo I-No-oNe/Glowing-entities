@@ -1,42 +1,41 @@
 {
-  "schemaVersion": 1,
-  "id": "glowing_entities",
-  "version": "1.20.1",
-
-  "name": "Glowing-entities",
-  "description": "Minecraft client-sided mod that make entities glow!",
-  "authors": [
-    "i_no_am"
-  ],
-  "contact": {
-    "sources": "https://github.com/I-No-oNe/Glowing-Entities",
-    "homepage": "https://github.com/I-No-oNe",
-    "issues": "https://github.com/I-No-oNe/Glowing-entities/issues"
-  },
-
-  "license": "MIT",
-  "icon": "assets/glowingentities/icon.png",
-  "environment": "client",
-  "entrypoints": {
-    "client": [
-      "net.i_no_am.glowing_entities.client.glowing_entities"
-    ]
-  },
-  "mixins": [
-    "glowing_entities.mixins.json"
-  ],
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.com/invite/tMaShNzNtP"
-      },
-      "update_checker": false
-    }
-  },
-
-  "depends": {
-    "fabricloader": "*",
-    "minecraft": "*",
-    "fabric": "*"
-  }
+	"schemaVersion": 1,
+	"id": "glowingentity",
+	"version": "${version}",
+	"name": "GlowingEntity",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/glowingentity/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.uhb217.glowingentity.GlowingEntity"
+		],
+		"client": [
+			"net.uhb217.glowingentity.GlowingEntityClient"
+		]
+	},
+	"mixins": [
+		"glowingentity.mixins.json",
+		{
+			"config": "glowingentity.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
 }
