@@ -4,22 +4,27 @@
   "version": "1.20.1",
   "name": "Glowing-entities",
   "description": "Minecraft client-sided mod that makes entities glow!",
-  "authors": ["i_no_am","HUB"],
+  "authors": ["i_no_am", "HUB"],
   "contact": {
     "sources": "https://github.com/I-No-oNe/Glowing-Entities",
-    "homepage": "https://github.com/I-No-oNe\nhttps://github.com/uhb217",
+    "homepage": "https://github.com/I-No-oNe",
     "issues": "https://github.com/I-No-oNe/Glowing-entities/issues"
   },
   "license": "MIT",
-  "icon": "assets/glowingentities/icon.png",
+  "icon": "assets/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
       "net.i_no_am.glowing_entities.GlowingEntityClient"
     ]
-
   },
-  "mixins": ["glowing_entities.mixins.json"],
+  "mixins": [
+    "glowing_entities.mixins.json",
+    {
+      "config": "glowing_entities.client.mixins.json",
+      "environment": "client"
+    }
+  ],
   "custom": {
     "modmenu": {
       "links": {
