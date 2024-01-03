@@ -37,6 +37,5 @@
     "fabricloader": "*",
     "minecraft": "*",
     "fabric": "*"
-		"fabric-api": "*"
   }
 }
