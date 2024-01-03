@@ -14,7 +14,10 @@
   "icon": "assets/glowingentities/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": []
+    "client": [
+      "net.i_no_am.glowing_entities.GlowingEntityClient"
+    ]
+
   },
   "mixins": ["glowing_entities.mixins.json"],
   "custom": {

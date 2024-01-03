@@ -12,7 +12,7 @@ import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.lit
 public class GlowingEntityClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(literal("entity_glowing")
+		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(literal("Glowing effect")
 				.then(argument("glowing", IntegerArgumentType.integer())
 						.executes(context -> {
 							int value = IntegerArgumentType.getInteger(context, "glowing");
