@@ -19,7 +19,7 @@
     ]
   },
   "mixins": [
-    "glowing_entities.mixins.json",
+    "*",
     {
       "config": "glowing_entities.mixins.json",
       "environment": "*"
