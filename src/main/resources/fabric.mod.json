@@ -21,8 +21,8 @@
   "mixins": [
     "glowing_entities.mixins.json",
     {
-      "config": "glowing_entities.client.mixins.json",
-      "environment": "client"
+      "config": "glowing_entities.mixins.json",
+      "environment": "*"
     }
   ],
   "custom": {
@@ -37,5 +37,6 @@
     "fabricloader": "*",
     "minecraft": "*",
     "fabric": "*"
+		"fabric-api": "*"
   }
 }
