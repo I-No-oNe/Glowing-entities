@@ -1,9 +1,7 @@
-package net.uhb217.glowingentity;
+package net.i_no_am.glowing_entities;
 
-import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -23,7 +21,7 @@ public class GlowingEntityClient implements ClientModInitializer {
 							if (value > 15)
 								value = 15;
 							String glow = value < 0 ? "Normal" : String.valueOf(value);
-							context.getSource().sendFeedback(Text.literal("The Entity Glowing set to: " + glow).formatted(Formatting.DARK_AQUA));
+							context.getSource().sendFeedback(Text.literal("Glowing Entities:The Entity Glowing set to: " + glow).formatted(Formatting.GOLD));
 							return value;
 						}))));
 	}
