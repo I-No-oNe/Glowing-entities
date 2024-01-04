@@ -1,4 +1,4 @@
-package net.i_no_am.glowing_entities;
+package net.uhb217.glowingentity;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import net.fabricmc.api.ClientModInitializer;
@@ -12,7 +12,7 @@ import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.lit
 public class GlowingEntityClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(literal("Glowing effect")
+		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(literal("entity_glowing")
 				.then(argument("glowing", IntegerArgumentType.integer())
 						.executes(context -> {
 							int value = IntegerArgumentType.getInteger(context, "glowing");
@@ -21,7 +21,7 @@ public class GlowingEntityClient implements ClientModInitializer {
 							if (value > 15)
 								value = 15;
 							String glow = value < 0 ? "Normal" : String.valueOf(value);
-							context.getSource().sendFeedback(Text.literal("Glowing Entities:The Entity Glowing set to: " + glow).formatted(Formatting.GOLD));
+							context.getSource().sendFeedback(Text.literal("The Entity Glowing set to: " + glow).formatted(Formatting.DARK_AQUA));
 							return value;
 						}))));
 	}

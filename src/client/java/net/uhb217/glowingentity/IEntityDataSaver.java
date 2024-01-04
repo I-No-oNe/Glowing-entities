@@ -1,4 +1,4 @@
-package net.i_no_am.glowing_entities;
+package net.uhb217.glowingentity;
 
 import net.minecraft.nbt.NbtCompound;
 

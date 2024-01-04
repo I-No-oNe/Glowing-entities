@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "net.uhb217.glowingentity.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"EntityRendererMixin",
+		"ModEntityDataSaverMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
