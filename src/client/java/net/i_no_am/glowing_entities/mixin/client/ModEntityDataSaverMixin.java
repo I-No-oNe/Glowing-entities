@@ -1,8 +1,8 @@
-package net.uhb217.glowingentity.mixin.client;
+package net.i_no_am.glowing_entities.mixin.client;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.nbt.NbtCompound;
-import net.uhb217.glowingentity.IEntityDataSaver;
+import net.i_no_am.glowing_entities.IEntityDataSaver;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

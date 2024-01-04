@@ -1,4 +1,4 @@
-package net.uhb217.glowingentity.mixin;
+package net.i_no_am.glowing_entities.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
