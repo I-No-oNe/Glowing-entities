@@ -1,4 +1,4 @@
-package net.i_no_am.glowing_entities.mixin.client;
+package net.i_no_am.glowing_entities.mixin;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.nbt.NbtCompound;

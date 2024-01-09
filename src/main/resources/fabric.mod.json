@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "glowing_entities",
-	"version": "2",
+	"version": "2.0",
 	"name": "Glowing-Entities",
 	"description": "Minecraft client-sided mod that makes entities glow!",
 	"authors": [
@@ -17,17 +17,13 @@
 	"icon": "assets/glowing_entities/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"net.i_no_am.glowing_entities.GlowingEntities"
-		],
 		"client": [
 			"net.i_no_am.glowing_entities.GlowingEntitiesClient"
 		]
 	},
 	"mixins": [
-		"glowing_entities.mixins.json",
 		{
-			"config": "glowing_entities.client.mixins.json",
+			"config": "glowing_entities.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -45,6 +41,6 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"another-mod": "ClickCrystals"
 	}
 }
