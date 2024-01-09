@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "glowing_entities",
-	"version": "2",
+	"version": "2.0",
 	"name": "Glowing-Entities",
 	"description": "Minecraft client-sided mod that makes entities glow!",
 	"authors": [
