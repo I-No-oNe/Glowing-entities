@@ -40,7 +40,7 @@
 				"id": "glowing-entities",
 				"name": "Glowing Entities",
 				"description": "Minecraft client-sided mod that make entities glow!",
-				"icon": "assets/glowing_entities/icon.png"
+				"icon": "assets/modmenu/icon.png"
 			},
 			"update_checker": true
 		}
