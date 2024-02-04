@@ -16,7 +16,7 @@ public class GlowingEntitiesClient implements ClientModInitializer {
 						.executes(context -> {
 							int value = IntegerArgumentType.getInteger(context, "glowing");
 							IEntityDataSaver playerData = (IEntityDataSaver) context.getSource().getPlayer();
-							playerData.getPersistentData().putInt("glow",value);
+							playerData.glowing_entities$getPersistentData().putInt("glow",value);
 							if (value > 15)
 								value = 15;
 							String glow = value < 0 ? "Normal" : String.valueOf(value);
