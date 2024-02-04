@@ -9,7 +9,7 @@
 		"UHB217"
 	],
 	"contact": {
-		"homepage": "https://github.com/uhb217",
+		"homepage": "https://i-no-one.github.io/Website/",
 		"sources": "https://github.com/I-No-oNe/Glowing-Entities",
 		"issues": "https://github.com/I-No-oNe/Glowing-entities/issues"
 	},
@@ -35,6 +35,12 @@
 		"modmenu": {
 			"links": {
 				"modmenu.discord": "https://discord.com/invite/tMaShNzNtP"
+			},
+			"parent": {
+				"id": "glowing-entities",
+				"name": "Glowing Entities",
+				"description": "Minecraft client-sided mod that make entities glow!",
+				"icon": "assets/glowing_entities/icon.png"
 			},
 			"update_checker": true
 		}
