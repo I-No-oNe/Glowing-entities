@@ -14,7 +14,6 @@
 		"issues": "https://github.com/I-No-oNe/Glowing-entities/issues"
 	},
 	"license": "MIT",
-	"icon": "assets/glowing_entities/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
