@@ -3,7 +3,7 @@ ____________________________
 ## Minecraft client-sided mod that make entities glow on dark!
 _____________________________
 Wanna play without FullBright but you still want to see everything?\
-                              **So you got to the right place!**\
+**So you got to the right place!**\
 \
 *`Glowing Entites is a mod that turns every entity into a light source.`*
 
@@ -12,7 +12,7 @@ Wanna play without FullBright but you still want to see everything?\
 ### How to use the mod?
 
 
-On the **minecrft chat** type this command:
+On the **minecraft chat** type this command:
 ```json
 /glowing_effect <light level>
 ```
