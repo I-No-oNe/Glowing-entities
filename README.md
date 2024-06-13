@@ -12,7 +12,7 @@ Wanna play without FullBright but you still want to see everything?\
 ### How to use the mod?
 
 
-On the **minecrft chat** type this command:
+On the **minecraft chat** type this command:
 ```json
 /glowing_effect <light level>
 ```
