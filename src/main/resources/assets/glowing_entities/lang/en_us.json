@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.glowing_entities.title": "Glowing Entities",
+  "text.autoconfig.glowing_entities.option.enable": "Enable Glowing",
+  "text.autoconfig.glowing_entities.option.enable.@Tooltip": "Enable or disable glowing entities feature",
+  "text.autoconfig.glowing_entities.option.glowLevel": "Glow Level",
+  "text.autoconfig.glowing_entities.option.glowLevel.@Tooltip": "Set the glow level for entities (0-15)"
+}
