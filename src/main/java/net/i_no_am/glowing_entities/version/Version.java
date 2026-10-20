@@ -92,10 +92,10 @@ public class Version implements Global {
                 System.out.println("[Glowing-Entities] Version Check:\nLocal: " + localVersion + "\nRemote: " + remoteVersion);
                 sendOnce = true;
             }
-            if (localVersion < remoteVersion && mc.player != null && mc.screen == null) {
+            if (localVersion < remoteVersion && mc.player != null && mc.gui.screen() == null) {
                 hadPrompted = true;
 
-                mc.setScreen(new ConfirmScreen(confirmed -> {
+                mc.gui.setScreen(new ConfirmScreen(confirmed -> {
                     if (confirmed) {
                         try {
                             Desktop.getDesktop().browse(URI.create(downloadUrl));
@@ -103,7 +103,7 @@ public class Version implements Global {
                             System.out.println("[Glowing-Entities] Failed to open download page: " + e.getMessage());
                         }
                     }
-                    mc.setScreen(null);
+                    mc.gui.setScreen(null);
                 }, Component.literal(ChatFormatting.RED + name + " is outdated!"),
                         Component.literal("Please download the latest version from " + ChatFormatting.GREEN + "Modrinth"),
                         Component.literal("Download"), Component.literal("Continue playing")));
