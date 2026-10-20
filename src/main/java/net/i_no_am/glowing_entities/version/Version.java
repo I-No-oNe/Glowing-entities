@@ -4,11 +4,11 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import net.fabricmc.loader.api.FabricLoader;
 import net.i_no_am.glowing_entities.Global;
-import net.minecraft.client.gui.screen.ConfirmScreen;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
-import net.minecraft.util.Util;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.ConfirmScreen;
+import net.minecraft.network.chat.Component;
 
+import java.awt.Desktop;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -92,17 +92,21 @@ public class Version implements Global {
                 System.out.println("[Glowing-Entities] Version Check:\nLocal: " + localVersion + "\nRemote: " + remoteVersion);
                 sendOnce = true;
             }
-            if (localVersion < remoteVersion && mc.player != null && mc.currentScreen == null) {
+            if (localVersion < remoteVersion && mc.player != null && mc.screen == null) {
                 hadPrompted = true;
 
                 mc.setScreen(new ConfirmScreen(confirmed -> {
                     if (confirmed) {
-                        Util.getOperatingSystem().open(URI.create(downloadUrl));
+                        try {
+                            Desktop.getDesktop().browse(URI.create(downloadUrl));
+                        } catch (Exception e) {
+                            System.out.println("[Glowing-Entities] Failed to open download page: " + e.getMessage());
+                        }
                     }
-                    mc.player.closeScreen();
-                }, Text.of(Formatting.RED + name + " is outdated!"),
-                        Text.of("Please download the latest version from " + Formatting.GREEN + "Modrinth"),
-                        Text.of("Download"), Text.of("Continue playing")));
+                    mc.setScreen(null);
+                }, Component.literal(ChatFormatting.RED + name + " is outdated!"),
+                        Component.literal("Please download the latest version from " + ChatFormatting.GREEN + "Modrinth"),
+                        Component.literal("Download"), Component.literal("Continue playing")));
             }
 
         } catch (Exception e) {

@@ -1,7 +1,7 @@
 {
   "required": true,
   "package": "net.i_no_am.glowing_entities.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_25",
   "mixins": [],
   "injectors": {
     "defaultRequire": 1
