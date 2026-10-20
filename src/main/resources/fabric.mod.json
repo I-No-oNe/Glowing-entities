@@ -30,7 +30,7 @@
   ],
   "depends": {
     "modmenu": "*",
-    "fabric": "*",
+    "fabric-api": "*",
     "cloth-config": "*",
     "minecraft": "~26.3",
     "fabricloader": "\u003e\u003d0.19.5"
